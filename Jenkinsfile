@@ -6,7 +6,7 @@ node {
    
    stage('install'){
       nodejs(nodeJSInstallationName: 'NodeJS8'){
-        sh 'npm install'
+        sh 'npm install --only=dev'
        }
      }
    
