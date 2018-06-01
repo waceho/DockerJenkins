@@ -5,13 +5,13 @@ node {
       }
    
    stage('install'){
-      nodejs(nodeJSInstallationName: 'NodeJS9'){
+      nodejs(nodeJSInstallationName: 'NodeJS8'){
         sh 'npm install'
        }
      }
    
    stage('test') {
-      nodejs(nodeJSInstallationName: 'NodeJS9'){
+      nodejs(nodeJSInstallationName: 'NodeJS8'){
           sh 'npm test'
        }
      }
